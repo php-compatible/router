@@ -1,5 +1,19 @@
 # router
-Modernise the routing in your legacy projects
+Modernise the routing in your legacy projects.
+
+**PHP 8-style routing for PHP 4+** - Write enums today, upgrade to native enums tomorrow.
+
+This library provides a modern routing API that works on PHP 4 and above. When you're ready to upgrade to PHP 8.1+, use the included migration tool to automatically convert your routes to routing files (like laravel or symfony has)
+
+## Why Use This Package?
+
+- **Future-proof**: API modern routing standards and practices
+- **Zero-friction migration**: Automated upgrade tool converts to routing files.
+- **IDE-friendly**: CLI tool auto-generates PHPDoc annotations for full autocompletion
+- **Flexible**: Case-insensitive access, auto-increment values, string or int backing
+- **Human-readable labels**: Built-in conversion from `camelCase` to `Camel Case`
+- **Type-safe**: Strict type comparison for value lookups (matches PHP 8 behavior)
+- **Well-tested**: 100% code coverage across PHP 7.2 - 8.5
 
 ## Projects with file based routing
 
