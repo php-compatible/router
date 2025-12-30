@@ -14,6 +14,9 @@ define('OPTIONS', 'OPTIONS');
 define('TRACE', 'TRACE');
 define('PATCH', 'PATCH');
 
+/** Match all HTTP methods (use sparingly - prefer explicit methods) */
+define('ALL', true);
+
 /** @var string Root URL prefix for subsites */
 $ROOT_URL = '';
 
