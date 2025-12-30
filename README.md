@@ -4,7 +4,7 @@ Modernise the routing in your legacy projects
 ## Projects with file based routing
 
 - TODO: take the router from [teensyphp](https://github.com/daniel-samson/teensyphp)
-- TODO: add a fileRouter function to file based routing fileRouter(__FILE__, accept(GET), ...)
+- TODO: add a fileRouter function to file based routing fileRouter(__FILE__, accept(GET), ...) gets the path of http server root path, to work out the differences to get the url path.
 - TODO: add class wrappers for autoloader workflow
 - TODO: Write a guide blog
   - explain how old php application use .htaccess
