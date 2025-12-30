@@ -896,6 +896,7 @@ class RouterTest extends TestCase
     public function test_router_success_with_stop_code()
     {
         $_GET['url'] = 'success-stop';
+        $_SERVER['REQUEST_METHOD'] = GET;
         // Don't pre-set ROUTER_STOP_CODE - let the router set it
         unset($GLOBALS['ROUTER_STOP_CODE']);
 
