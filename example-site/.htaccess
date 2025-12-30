@@ -1,0 +1,9 @@
+# Rewrite engine
+RewriteEngine on
+
+# Default page
+DirectoryIndex index.php
+
+# Removing .php extension
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]

@@ -896,7 +896,8 @@ class RouterTest extends TestCase
     public function test_router_success_with_stop_code()
     {
         $_GET['url'] = 'success-stop';
-        $GLOBALS['ROUTER_STOP_CODE'] = true;
+        // Don't pre-set ROUTER_STOP_CODE - let the router set it
+        unset($GLOBALS['ROUTER_STOP_CODE']);
 
         ob_start();
         router(function () {
@@ -907,6 +908,8 @@ class RouterTest extends TestCase
         $output = ob_get_clean();
 
         $this->assertEquals('success', $output);
+        // Verify stop code was set by the router
+        $this->assertTrue(isset($GLOBALS['ROUTER_STOP_CODE']));
     }
 }
 
