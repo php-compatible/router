@@ -21,7 +21,7 @@ This library provides a modern routing API that works on PHP 4 and above. When y
 - TODO: add a fileRouter function to file based routing fileRouter(__FILE__, accept(GET), ...) gets the path of http server root path, to work out the differences to get the url path.
 - TODO: add class wrappers for autoloader workflow
 - TODO: Write a guide blog
-  - explain how old php application use .htaccess
+  - explain how old php application use .htaccess to achieve file based routing /path/to/file or ./path -> /path/index.php
   - explain the how mixture of http verbs in the same route file can make things hard to maintain
   - how to use our routing package to clean up the issue.
   - how to use our routing package to migrate to towards router files (like laravel or symphony).
