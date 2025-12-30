@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/8.5/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         executionOrder="depends,defects"
+         beStrictAboutOutputDuringTests="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         stderr="true">
+  <testsuites>
+    <testsuite name="default">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist>
+      <directory suffix=".php">src</directory>
+      <exclude>
+        <!-- Constants file - loaded before coverage starts -->
+        <file>src/http_response_codes.php</file>
+        <!-- PHP 5 error handler - can't be tested on PHP 7+ -->
+        <file>src/error_handler_php5.php</file>
+        <!-- Error handler loader - loaded before coverage starts -->
+        <file>src/error_handler.php</file>
+        <!-- Stop function with exit() - exit can't be tested -->
+        <file>src/stop.php</file>
+      </exclude>
+    </whitelist>
+  </filter>
+</phpunit>

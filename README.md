@@ -1,7 +1,7 @@
 # router
 Modernise the routing in your legacy projects.
 
-**PHP 8-style routing for PHP 4+** - Write enums today, upgrade to native enums tomorrow.
+**PHP 8-style routing for PHP 4+ style routing** - Write routes today, upgrade to modern tomorrow.
 
 This library provides a modern routing API that works on PHP 4 and above. When you're ready to upgrade to PHP 8.1+, use the included migration tool to automatically convert your routes to routing files (like laravel or symfony has)
 
@@ -16,7 +16,7 @@ This library provides a modern routing API that works on PHP 4 and above. When y
 ## Projects with file based routing
 
 - TODO: take the router from [teensyphp](https://github.com/daniel-samson/teensyphp)
-- TODO: add a fileRouter function to file based routing fileRouter(__FILE__, accept(GET), ...) gets the path of http server root path, to work out the differences to get the url path.
+- TODO: add a fileRouter function to file based routing fileRouter gets $_SERVER["DOCUMENT_ROOT"], to work out the differences if __FILE__ to get the url path.
 - TODO: add class wrappers for autoloader workflow
 - TODO: Write a guide blog
   - explain how old php application use .htaccess to achieve file based routing /path/to/file or ./path -> /path/index.php

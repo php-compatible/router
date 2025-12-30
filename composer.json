@@ -1,0 +1,38 @@
+{
+  "name": "php-compatible/router",
+  "description": "PHP 8-style routing for PHP 4+ - Modern routing API that works on legacy PHP",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpCompatible\\Router\\": "src/Router/"
+    },
+    "files": [
+      "src/stop.php",
+      "src/request.php",
+      "src/response.php",
+      "src/http_response_codes.php",
+      "src/HttpException.php",
+      "src/router.php",
+      "src/middleware.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PhpCompatible\\Router\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-debug": "vendor/bin/phpunit --debug",
+    "coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-text",
+    "coverage-html": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage"
+  }
+}

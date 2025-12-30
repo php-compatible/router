@@ -1,0 +1,19 @@
+services:
+  php-cli:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/app
+    working_dir: /app
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "8080:8080"
+    command: php -S 0.0.0.0:8080 -t /app/example-site /app/example-site/router.php
