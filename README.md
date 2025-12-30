@@ -10,10 +10,8 @@ This library provides a modern routing API that works on PHP 4 and above. When y
 - **Future-proof**: API modern routing standards and practices
 - **Zero-friction migration**: Automated upgrade tool converts to routing files.
 - **IDE-friendly**: CLI tool auto-generates PHPDoc annotations for full autocompletion
-- **Flexible**: Case-insensitive access, auto-increment values, string or int backing
-- **Human-readable labels**: Built-in conversion from `camelCase` to `Camel Case`
-- **Type-safe**: Strict type comparison for value lookups (matches PHP 8 behavior)
-- **Well-tested**: 100% code coverage across PHP 7.2 - 8.5
+- **Flexible**: Router Based Files, File based routing supported.
+- **Well-tested**: 100% code coverage across PHP 4 - 8.5
 
 ## Projects with file based routing
 
